@@ -1,6 +1,6 @@
 import express from "express";
-import GridFSVideos  from "./GridFSVideos.js";
-import GridFSImages  from "./GridFSImages.js";
+import GridFSVideos  from "./gridFSVideos.js";
+import GridFSImages  from "./gridFSImages.js";
 import dotenv from "dotenv";
 dotenv.config()
 
