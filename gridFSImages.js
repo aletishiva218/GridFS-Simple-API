@@ -11,7 +11,10 @@ let mongoURI;
 let InitializeGridFS = (mongoUrl,collectionName) =>{
   mongoURI = mongoUrl; // Replace with your MongoDB URI
   // Connect to MongoDB
-mongoose.connect(mongoURI);
+mongoose.connect(mongoURI,{
+  useNewUrlParser: true,
+    useUnifiedTopology: true,
+});
 conn = mongoose.connection;
 
 conn.once('open', () => {
